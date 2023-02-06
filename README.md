@@ -56,13 +56,33 @@ Your assignment is to use Built-In java classes to:
 
 * Look at the getHiddenSecrets method and identify the following parts by editing this README.md and providing your answers:
     * What is the **access modifer** (e.g. public, private, protected)?
+      * public
     * Is it a **Class method** or an **object Instance method**, how do you know?
+      * It's a class method because it uses Static in the declaration.
     * What is its **return data-type**?
+      * It doesn't return anything, it just prints strings
     * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+      * Yes, it uses one File-type parameter.
 * Scan line by line through the code and try to determine how it works?
-    * What is familiar to you?
-    * What is not familiar to you?
-    * Do the **for** loops make sense, and if so, tell me what you think they do?
+  * L26: Defines method.
+  * L27: Uses try
+  * L28: Creates a Metadata-type variable and assigns the variable using a method from the .jar file
+  * L29: Argument for method is a new File Input Stream of the argument from the getHiddenSecrets argument.
+  * L31: Creates a for loop. Don't really understand the part with the colon.
+  * L32: Creates a nested for loop. Also don't understand the colon.
+  * L33: Prints each piece of metadata line by line.
+  * L34: Values for the format specifiers.
+  * L36: Checks if the directory has errors.
+  * L37-38: Prints each error found.
+  * L42-43: Probably prints an error if the directory isn't found. catch is likely related to try.
+  * L44-45: Catch for if there is an i/o error.
+  * L46-47: Catch for if program was unable to process the meta-data
+      * What is familiar to you?
+        * The concept of for loops, if statements and some of the method declaration bit.
+      * What is not familiar to you?
+        * try, catch, the methods used, Tag-type, and how these for loops are defined.
+      * Do the **for** loops make sense, and if so, tell me what you think they do?
+        * Sort of. The first one runs the other for loops for every directory. The second one prints something for each piece of metadata, and the third prints the errors for each directory. 
 
 ## PART 4 - Turn in
 
